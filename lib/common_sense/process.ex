@@ -50,6 +50,6 @@ defmodule CommonSense.Process do
   defdelegate flag(flag, value), to: Process
   defdelegate flag(pid, flag, value), to: Process
 
-  defdelegate info(pid); to: Process
+  defdelegate info(pid), to: Process
   defdelegate info(pid, spec), to: Process
 end
