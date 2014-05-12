@@ -1,5 +1,5 @@
 defmodule CommonSense.Kernel do
-  def __using__(_opts) do
+  defmacro __using__(_opts) do
     quote do
       import unquote(__MODULE__)
       import Kernel, except: [
